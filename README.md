@@ -1,17 +1,40 @@
-# Forest Cover Type Classification 🌲
+# 🌲 Forest Cover Type Classification
 
-This project uses the UCI Covertype dataset to predict forest cover types using machine learning.
+This project applies supervised machine learning techniques to classify forest cover types using cartographic variables from the UCI Covertype dataset. It focuses on model performance comparison, feature importance, and interpretability using Random Forest and XGBoost.
 
-## 🔍 Problem
-Predict the forest cover type (7 classes) based on 54 features like elevation, aspect, soil type, and wilderness area.
+---
 
-## 📦 Tech Stack
-- Python
-- Pandas, NumPy
+## 📂 Dataset
+- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/covertype)
+- **Shape:** 581,012 rows × 55 columns
+- **Target:** Cover_Type (1 to 7), representing forest cover classes
+
+---
+
+## 📌 Objectives
+- Classify forest cover types using environmental and soil features
+- Compare performance between Random Forest and XGBoost
+- Visualize confusion matrices and feature importances
+- Save results in a professional and reusable format
+
+---
+
+## 🛠️ Tools & Libraries
+- Python, Pandas, NumPy
 - Scikit-learn (Random Forest)
 - XGBoost
-- Matplotlib, Seaborn
+- Seaborn, Matplotlib
 
+---
+
+## 🔍 Key Features
+- Clean preprocessing with no missing values
+- Stratified train-test split
+- Hyperparameter-ready model structure
+- Saved charts in `/charts/` folder
+- Scalable design for future tuning or deployment
+
+---
 ## 📊 Models
 | Model          | Accuracy |
 |----------------|----------|
